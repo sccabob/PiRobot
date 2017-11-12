@@ -8,6 +8,10 @@ def main():
 
     #use constants rather than pin numbers
     #to id pins in calls to GPIO
+	#rf = right track forward
+	#rr = right track reverse 
+	#etc, etc.
+	
     rf = 7
     rr = 11
     lf = 15
@@ -16,7 +20,7 @@ def main():
     #get the cursese window, turn off echoing of keyboard to screen, turn on
     #instant (no waiting) key sesponse, and use special values for cursor keys
     screen = curses.initscr()
-#    curses.noecho()
+    curses.noecho()
     curses.cbreak()
     screen.keypad(True)
     
