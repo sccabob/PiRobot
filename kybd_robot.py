@@ -4,6 +4,8 @@ import RPi.GPIO as robot
 import time
 import curses
 
+#A silly comment!!!!!!!
+
 def main():
 
     #use constants rather than pin numbers
@@ -16,7 +18,7 @@ def main():
     #get the cursese window, turn off echoing of keyboard to screen, turn on
     #instant (no waiting) key sesponse, and use special values for cursor keys
     screen = curses.initscr()
-#    curses.noecho()
+    curses.noecho()
     curses.cbreak()
     screen.keypad(True)
     
